@@ -228,7 +228,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('assets/hero.jpg');
+  background-image: url('https://aaronforum.com/wp-content/uploads/2024/07/Photo-Shoot-1920-x-1080-4.png');
   background-size: cover;
   background-position: center;
   background-color: var(--color-dark-2); /* fallback */
@@ -478,6 +478,11 @@ ul {
 
 .footer-contact a:hover {
   color: var(--color-white);
+}
+
+.footer-contact li {
+  font-size: 0.875rem;
+  color: rgba(245, 245, 245, 0.6);
 }
 
 .footer-copy {
