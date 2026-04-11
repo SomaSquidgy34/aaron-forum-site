@@ -193,11 +193,13 @@ ul {
 }
 
 .logo {
-  font-size: 1.1rem;
-  font-weight: var(--fw-bold);
-  color: var(--color-white);
-  letter-spacing: -0.01em;
   flex-shrink: 0;
+}
+
+.logo-img {
+  height: 44px;
+  width: auto;
+  display: block;
 }
 
 .nav-list {
@@ -367,6 +369,45 @@ ul {
   line-height: 1.8;
 }
 
+.about-text p + p {
+  margin-top: 1.1rem;
+}
+
+.about-expertise-title {
+  font-size: 0.75rem;
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-red);
+  margin-top: 2rem;
+  margin-bottom: 0.875rem;
+}
+
+.about-expertise {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.about-expertise li {
+  font-size: 0.9375rem;
+  color: rgba(245, 245, 245, 0.82);
+  padding-left: 1.25rem;
+  position: relative;
+}
+
+.about-expertise li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-red);
+}
+
 /* ============================================================
    CONTACT
    ============================================================ */
@@ -428,6 +469,11 @@ ul {
   font-size: 0.875rem;
   color: rgba(245, 245, 245, 0.6);
   transition: color var(--transition);
+}
+
+.footer-contact li {
+  font-size: 0.875rem;
+  color: rgba(245, 245, 245, 0.6);
 }
 
 .footer-contact a:hover {
