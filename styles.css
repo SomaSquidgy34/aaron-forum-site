@@ -226,7 +226,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('hero-bg.jpg');
+  background-image: url('assets/hero.jpg');
   background-size: cover;
   background-position: center;
   background-color: var(--color-dark-2); /* fallback */
@@ -255,20 +255,26 @@ ul {
   font-weight: var(--fw-bold);
   color: var(--color-white);
   line-height: 1.1;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.035em;
   max-width: 900px;
   margin-inline: auto;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
   text-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
 }
 
 .hero-sub {
   font-size: clamp(1.05rem, 2.2vw, 1.3rem);
-  color: var(--color-white);
+  color: rgba(245, 245, 245, 0.82);
   max-width: 580px;
   margin-inline: auto;
-  margin-bottom: 2.5rem;
-  line-height: 1.6;
+  margin-bottom: 2.75rem;
+  line-height: 1.65;
+}
+
+.hero-content .btn-primary {
+  font-size: 1.05rem;
+  padding: 1rem 2.5rem;
+  box-shadow: 0 4px 20px rgba(192, 57, 43, 0.55);
 }
 
 .hero-content .btn-primary {
