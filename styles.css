@@ -214,7 +214,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('hero-bg.jpg');
+  background-image: url('assets/hero.jpg');
   background-size: cover;
   background-position: center;
   background-color: var(--color-dark-2); /* fallback */
