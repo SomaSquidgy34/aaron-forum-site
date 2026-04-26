@@ -112,7 +112,7 @@ ul {
   padding: 0.75rem 1.75rem;
   border-radius: var(--radius-btn);
   font-family: var(--font-base);
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   font-weight: var(--fw-semibold);
   cursor: pointer;
   border: 2px solid transparent;
@@ -189,7 +189,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 64px;
+  height: 96px;
 }
 
 .logo {
@@ -197,7 +197,7 @@ ul {
 }
 
 .logo-img {
-  height: 44px;
+  height: 88px;
   width: auto;
   display: block;
 }
@@ -209,7 +209,7 @@ ul {
 }
 
 .nav-list a {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   font-weight: var(--fw-medium);
   color: var(--color-light);
   transition: color var(--transition);
@@ -249,7 +249,7 @@ ul {
   position: relative;
   z-index: 1;
   text-align: center;
-  padding-top: 64px; /* header height */
+  padding-top: 96px; /* header height */
 }
 
 .hero-content h1 {
