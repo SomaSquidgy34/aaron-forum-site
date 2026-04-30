@@ -228,7 +228,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('https://aaronforum.com/wp-content/uploads/2024/07/Photo-Shoot-1920-x-1080-4.png');
+  background-image: url('https://admin.aaronforum.com/wp-content/uploads/2024/07/Photo-Shoot-1920-x-1080-4.png');
   background-size: cover;
   background-position: center;
   background-color: var(--color-dark-2); /* fallback */
