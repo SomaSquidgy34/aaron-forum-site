@@ -1,0 +1,120 @@
+<?php
+/**
+ * front-page.php
+ *
+ * Loaded by WordPress for the static front page (Settings → Reading →
+ * "A static page" → Front page). If no static front page is set,
+ * WordPress falls back to index.php.
+ */
+
+get_header();
+?>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" aria-label="Hero" id="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <h1>Firearms Consulting &amp; Safety Expertise</h1>
+        <p class="hero-sub">20+ years of experience: Special Forces, firearms instruction, multi gun range/store founder and operator, Special Operations armorer, certified gunsmith.</p>
+        <a href="#contact" class="btn btn-primary">Contact</a>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section services" aria-labelledby="services-title">
+      <div class="container">
+        <span class="section-eyebrow">Services</span>
+        <h2 id="services-title" class="section-title">Expert Services and Consulting</h2>
+        <div class="services-grid">
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h3>Gun Range Design</h3>
+            <p>End-to-end planning and layout consulting for new builds, renovations, and existing shooting ranges. Gun range safety evaluations, operating procedures, physical design, ventilation, sight lines, operational flow.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3>Gun Store Design</h3>
+            <p>Strategic retail layout consulting to maximize customer experience, sales, security, and internal processes for regulatory compliance in firearms retail environments.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Firearms Safety Standards</h3>
+            <p>Development and review of safety protocols, operating procedures, safe handling protocols, safe storage protocols, and staff training programs, including safety evaluations of facility operations and alignment with industry best practices, informed by real-world firearms range and retail experience.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </div>
+            <h3>Firearms Expertise</h3>
+            <p>Expert services, litigation consulting and support, technical firearms analysis. Areas of focus include firearms mechanics, external ballistics, catastrophic malfunction analysis, unplanned discharges, chain of custody procedures.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about" aria-labelledby="about-title">
+      <div class="container about-inner">
+        <div class="about-image">
+          <img src="https://aaronforum.com/wp-content/uploads/2025/02/WhatsApp-Image-2025-02-04-at-11.12.37_320a07ae.jpg" alt="Aaron Forum, Firearms Consulting &amp; Safety Expert" loading="lazy" />
+        </div>
+        <div class="about-text">
+          <span class="section-eyebrow">Background</span>
+          <h2 id="about-title" class="section-title text-left">About Aaron Forum</h2>
+          <p>Aaron Forum, SFC USA (Ret.), is a firearms safety, firearms mechanics, shooting-range operations, and negligent security expert with more than two decades of experience spanning U.S. Army Special Operations, high-volume commercial gun range operations, firearms training, and firearms industry consulting.</p>
+          <p>He is the founder and former CEO of Shoot Center LLC, a commercial indoor firearms training facility, retail operation, and e-commerce business in Cape Coral, Florida, which he built from inception to approximately $10 million in annual revenue while serving more than 100,000 customers. Over the course of his career, he has personally trained more than 10,000 firearms students in safe firearm handling, operation, and responsible use.</p>
+          <p>Mr. Forum leads Praetorian Partners, a multidisciplinary group of professionals that includes experienced law enforcement personnel, security experts, Special Operations veterans, and veteran gunsmiths who assist in the evaluation of complex firearms and security-related matters. Through this network, he evaluates and explains complex issues involving firearms mechanics, unintentional trigger pulls, firearm and ammunition defects, holster and related product failures, negligent security, gun range and gun store standards of care, and broader firearm safety practices.</p>
+          <p>He is presently leading the development of Hot Brass Orlando, a large-scale machine gun experience and firearms museum attraction planned for Orlando's International Drive corridor, drawing on more than twenty years of experience in Special Operations, commercial gun range design, firearms safety systems, and high-volume semi-automatic and fully automatic firearms rental operations.</p>
+          <h3 class="about-expertise-title">Areas of Expertise</h3>
+          <ul class="about-expertise">
+            <li>Firearms mechanics and operation</li>
+            <li>Negligent discharge incidents</li>
+            <li>Gun range and gun store safety standards of care</li>
+            <li>Firearms training protocols and standards of care</li>
+            <li>Firearm and related products design defects and safety systems</li>
+            <li>Commercial range design and risk management</li>
+            <li>Negligent security</li>
+            <li>Shooting Scene Reconstruction</li>
+            <li>Firearms Accident Analysis: Negligent Discharges, Unplanned Discharges, and Uncommanded Discharges</li>
+            <li>Unplanned discharges</li>
+            <li>Gunrange Disputes</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact" aria-labelledby="contact-title">
+      <div class="container contact-inner">
+        <span class="section-eyebrow">Get in Touch</span>
+        <h2 id="contact-title" class="section-title">Contact Aaron Forum</h2>
+        <p class="contact-body">For expert services and consulting related to firearms safety, unplanned discharges, gun explosions, firearms mechanics of operation, external ballistics, gun range disputes, commercial gun range/store consulting and design, product design flaws, or related standards of care, contact Aaron Forum directly.</p>
+        <div class="contact-actions">
+          <a href="tel:+19709722766" class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.36 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91A16 16 0 0 0 15.09 16l.97-.97a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call Now
+          </a>
+          <a href="mailto:aaron@aaronforum.com" class="btn btn-outline">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+<?php get_footer(); ?>
