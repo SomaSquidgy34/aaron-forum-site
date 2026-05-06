@@ -43,10 +43,10 @@ Text Domain: aaron-forum
   --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.25);
   --shadow-card-hover: 0 8px 32px rgba(0, 0, 0, 0.38);
 
-  --header-height: 72px;
-  --header-height-mobile: 60px;
-  --logo-height: 64px;
-  --logo-height-mobile: 50px;
+  --header-height: 96px;
+  --header-height-mobile: 52px;
+  --logo-height: 88px;
+  --logo-height-mobile: 38px;
   --logo-brightness: 0.72;
 }
 
@@ -97,7 +97,7 @@ ul {
 
 .section-eyebrow {
   display: block;
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-weight: var(--fw-semibold);
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -213,7 +213,6 @@ body {
   background-color: rgba(17, 20, 24, 0.92);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--color-border);
-  overflow: hidden;
 }
 
 .header-inner {
@@ -373,7 +372,7 @@ body {
 }
 
 .card p {
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   color: rgba(245, 245, 245, 0.72);
   line-height: 1.7;
 }
@@ -410,7 +409,7 @@ body {
 }
 
 .about-text p {
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   color: rgba(245, 245, 245, 0.82);
   line-height: 1.8;
 }
@@ -420,7 +419,7 @@ body {
 }
 
 .about-expertise-title {
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-weight: var(--fw-semibold);
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -437,7 +436,7 @@ body {
 }
 
 .about-expertise li {
-  font-size: 1.05rem;
+  font-size: 0.9375rem;
   color: rgba(245, 245, 245, 0.82);
   padding-left: 1.25rem;
   position: relative;
@@ -468,7 +467,7 @@ body {
 }
 
 .contact-body {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   color: rgba(245, 245, 245, 0.8);
   line-height: 1.75;
   margin-bottom: 3rem;
@@ -532,52 +531,116 @@ body {
 }
 
 /* ============================================================
-   RESPONSIVE — MOBILE (≤480px)
+   HAMBURGER TOGGLE BUTTON
    ============================================================ */
-@media (max-width: 480px) {
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  padding: 6px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color var(--transition);
+}
+
+.nav-toggle:hover,
+.nav-toggle:focus-visible {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.hamburger-bar {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-light);
+  border-radius: 2px;
+  transition: transform var(--transition), opacity var(--transition);
+}
+
+/* Animate bars into an X when open */
+.nav-toggle[aria-expanded="true"] .hamburger-bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.nav-toggle[aria-expanded="true"] .hamburger-bar:nth-child(2) {
+  opacity: 0;
+}
+.nav-toggle[aria-expanded="true"] .hamburger-bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ============================================================
+   RESPONSIVE — MOBILE (< 640px)
+   ============================================================ */
+@media (max-width: 639px) {
+  /* Smaller header */
   .header-inner {
     height: var(--header-height-mobile);
-    gap: 0.75rem;
+    align-items: flex-start;
+    padding-top: 7px;
   }
 
+  /* Smaller logo */
   .logo-img,
   .custom-logo-link img,
   .custom-logo {
     height: var(--logo-height-mobile);
   }
 
-  .hero-content {
-    padding-top: var(--header-height-mobile); /* adjusted header height */
+  /* Show hamburger, hide nav by default */
+  .nav-toggle {
+    display: flex;
+  }
+
+  nav {
+    position: fixed;
+    top: var(--header-height-mobile);
+    left: 0;
+    right: 0;
+    background-color: rgba(17, 20, 24, 0.97);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--color-border);
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+  }
+
+  nav.is-open {
+    max-height: 300px;
   }
 
   .nav-list {
-    gap: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    padding: 0.5rem 0 1rem;
   }
 
-  .nav-list a {
-    font-size: 0.95rem;
+  .nav-list li {
+    width: 100%;
   }
 
-  .btn-sm {
-    padding: 0.4rem 0.9rem;
-    font-size: 0.8rem;
+  .nav-list a:not(.btn) {
+    display: block;
+    padding: 0.75rem clamp(16px, 4vw, 40px);
+  }
+
+  .nav-list .btn-sm {
+    margin: 0.5rem clamp(16px, 4vw, 40px);
+  }
+
+  /* Reduce hero top padding to match smaller header */
+  .hero-content {
+    padding-top: var(--header-height-mobile);
   }
 
   .contact-actions {
     flex-direction: column;
     align-items: center;
-  }
-
-  .contact-body {
-    font-size: 1.1rem;
-  }
-
-  .about-text p {
-    font-size: 1rem;
-  }
-
-  .card p {
-    font-size: 0.975rem;
   }
 }
 
@@ -594,6 +657,29 @@ body {
    RESPONSIVE — DESKTOP (≥900px)
    ============================================================ */
 @media (min-width: 900px) {
+  /* Larger base type on desktop — scales all rem values up proportionally */
+  html {
+    font-size: 17px;
+  }
+
+  /* Explicitly raise the smallest text so nothing reads below ~16px */
+  .about-expertise li {
+    font-size: 1rem;
+  }
+
+  .footer-contact a,
+  .footer-contact li {
+    font-size: 1rem;
+  }
+
+  .footer-copy {
+    font-size: 1rem;
+  }
+
+  .btn-sm {
+    font-size: 1rem;
+  }
+
   .services-grid {
     grid-template-columns: repeat(4, 1fr);
   }
