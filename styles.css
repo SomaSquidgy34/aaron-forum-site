@@ -80,7 +80,7 @@ ul {
 
 .section-eyebrow {
   display: block;
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-weight: var(--fw-semibold);
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -327,7 +327,7 @@ ul {
 }
 
 .card p {
-  font-size: 0.9375rem;
+  font-size: 1.15rem;
   color: rgba(245, 245, 245, 0.72);
   line-height: 1.7;
 }
@@ -364,7 +364,7 @@ ul {
 }
 
 .about-text p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: rgba(245, 245, 245, 0.82);
   line-height: 1.8;
 }
@@ -374,7 +374,7 @@ ul {
 }
 
 .about-expertise-title {
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-weight: var(--fw-semibold);
   letter-spacing: 0.12em;
   text-transform: uppercase;
