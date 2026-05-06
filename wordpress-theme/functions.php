@@ -21,7 +21,7 @@ function aaron_forum_setup() {
 
 	// Custom logo support — sized to match the header logo.
 	add_theme_support( 'custom-logo', array(
-		'height'      => 64,
+		'height'      => 88,
 		'width'       => 0,
 		'flex-height' => true,
 		'flex-width'  => true,

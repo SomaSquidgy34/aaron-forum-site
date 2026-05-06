@@ -26,7 +26,13 @@
         ?>
       </a>
 
-      <nav aria-label="<?php esc_attr_e( 'Primary navigation', 'aaron-forum' ); ?>">
+      <button class="nav-toggle" aria-expanded="false" aria-label="Open navigation" aria-controls="primary-nav">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <nav id="primary-nav" aria-label="<?php esc_attr_e( 'Primary navigation', 'aaron-forum' ); ?>">
         <?php
         wp_nav_menu( array(
           'theme_location' => 'primary',
