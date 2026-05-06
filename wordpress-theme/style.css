@@ -42,6 +42,12 @@ Text Domain: aaron-forum
 
   --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.25);
   --shadow-card-hover: 0 8px 32px rgba(0, 0, 0, 0.38);
+
+  --header-height: 72px;
+  --header-height-mobile: 60px;
+  --logo-height: 64px;
+  --logo-height-mobile: 50px;
+  --logo-brightness: 0.72;
 }
 
 /* ============================================================
@@ -183,6 +189,19 @@ ul {
 }
 
 /* ============================================================
+   WORDPRESS ADMIN BAR — hide on front end (CSS safety net;
+   PHP filter already removes it via show_admin_bar => false)
+   ============================================================ */
+#wpadminbar {
+  display: none !important;
+}
+
+html,
+body {
+  margin-top: 0 !important;
+}
+
+/* ============================================================
    HEADER
    ============================================================ */
 .site-header {
@@ -194,13 +213,14 @@ ul {
   background-color: rgba(17, 20, 24, 0.92);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--color-border);
+  overflow: hidden;
 }
 
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 96px;
+  height: var(--header-height);
 }
 
 .logo {
@@ -208,17 +228,19 @@ ul {
 }
 
 .logo-img {
-  height: 88px;
+  height: var(--logo-height);
   width: auto;
   display: block;
+  filter: brightness(var(--logo-brightness));
 }
 
 /* WordPress custom logo wraps the img in an <a>; target the img inside it */
 .custom-logo-link img,
 .custom-logo {
-  height: 88px;
+  height: var(--logo-height);
   width: auto;
   display: block;
+  filter: brightness(var(--logo-brightness));
 }
 
 .nav-list {
@@ -273,7 +295,7 @@ ul {
   position: relative;
   z-index: 1;
   text-align: center;
-  padding-top: 96px; /* header height */
+  padding-top: var(--header-height); /* offset for fixed header */
 }
 
 .hero-content h1 {
@@ -351,7 +373,7 @@ ul {
 }
 
 .card p {
-  font-size: 0.9375rem;
+  font-size: 1.05rem;
   color: rgba(245, 245, 245, 0.72);
   line-height: 1.7;
 }
@@ -388,7 +410,7 @@ ul {
 }
 
 .about-text p {
-  font-size: 1rem;
+  font-size: 1.125rem;
   color: rgba(245, 245, 245, 0.82);
   line-height: 1.8;
 }
@@ -415,7 +437,7 @@ ul {
 }
 
 .about-expertise li {
-  font-size: 0.9375rem;
+  font-size: 1.05rem;
   color: rgba(245, 245, 245, 0.82);
   padding-left: 1.25rem;
   position: relative;
@@ -446,7 +468,7 @@ ul {
 }
 
 .contact-body {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   color: rgba(245, 245, 245, 0.8);
   line-height: 1.75;
   margin-bottom: 3rem;
@@ -507,6 +529,56 @@ ul {
 .footer-copy {
   font-size: 0.8rem;
   color: rgba(245, 245, 245, 0.4);
+}
+
+/* ============================================================
+   RESPONSIVE — MOBILE (≤480px)
+   ============================================================ */
+@media (max-width: 480px) {
+  .header-inner {
+    height: var(--header-height-mobile);
+    gap: 0.75rem;
+  }
+
+  .logo-img,
+  .custom-logo-link img,
+  .custom-logo {
+    height: var(--logo-height-mobile);
+  }
+
+  .hero-content {
+    padding-top: var(--header-height-mobile); /* adjusted header height */
+  }
+
+  .nav-list {
+    gap: 1rem;
+  }
+
+  .nav-list a {
+    font-size: 0.95rem;
+  }
+
+  .btn-sm {
+    padding: 0.4rem 0.9rem;
+    font-size: 0.8rem;
+  }
+
+  .contact-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-body {
+    font-size: 1.1rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+
+  .card p {
+    font-size: 0.975rem;
+  }
 }
 
 /* ============================================================

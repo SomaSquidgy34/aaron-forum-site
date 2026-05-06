@@ -21,7 +21,7 @@ function aaron_forum_setup() {
 
 	// Custom logo support — sized to match the header logo.
 	add_theme_support( 'custom-logo', array(
-		'height'      => 88,
+		'height'      => 64,
 		'width'       => 0,
 		'flex-height' => true,
 		'flex-width'  => true,
@@ -89,3 +89,8 @@ function aaron_forum_preconnect_fonts( $hints, $relation_type ) {
 	return $hints;
 }
 add_filter( 'wp_resource_hints', 'aaron_forum_preconnect_fonts', 10, 2 );
+
+// ---------------------------------------------------------------------------
+// Hide WordPress admin bar on the front end for all users
+// ---------------------------------------------------------------------------
+add_filter( 'show_admin_bar', '__return_false' );
