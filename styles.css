@@ -610,6 +610,29 @@ ul {
    RESPONSIVE — DESKTOP (≥900px)
    ============================================================ */
 @media (min-width: 900px) {
+  /* Larger base type on desktop — scales all rem values up proportionally */
+  html {
+    font-size: 17px;
+  }
+
+  /* Explicitly raise the smallest text so nothing reads below ~16px */
+  .about-expertise li {
+    font-size: 1rem;
+  }
+
+  .footer-contact a,
+  .footer-contact li {
+    font-size: 1rem;
+  }
+
+  .footer-copy {
+    font-size: 1rem;
+  }
+
+  .btn-sm {
+    font-size: 1rem;
+  }
+
   .services-grid {
     grid-template-columns: repeat(4, 1fr);
   }
