@@ -12,14 +12,9 @@ jobs:
     steps:
       - uses: actions/checkout@master
 
-      - name: Deploy theme via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: ${{ secrets.FTP_SERVER_DIR }}
-          local-dir: ./wordpress-theme/
+      - name: Trigger WordPress theme update
+        run: |
+          curl -fsSL "https://aaronforum.com/wp-json/dfg/v1/package_update?secret=${{ secrets.WP_DEPLOY_SECRET }}&type=theme&package=aaron-forum-site"
 
       - name: Upload theme artifact
         uses: actions/upload-artifact@v4
