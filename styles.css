@@ -537,14 +537,16 @@ ul {
    RESPONSIVE — MOBILE (< 640px)
    ============================================================ */
 @media (max-width: 639px) {
-  /* Smaller header */
+  /* Smaller header, items aligned toward the top */
   .header-inner {
-    height: 60px;
+    height: 52px;
+    align-items: flex-start;
+    padding-top: 7px;
   }
 
   /* Smaller logo */
   .logo-img {
-    height: 46px;
+    height: 38px;
   }
 
   /* Show hamburger, hide nav by default */
@@ -554,7 +556,7 @@ ul {
 
   nav {
     position: fixed;
-    top: 60px;
+    top: 52px;
     left: 0;
     right: 0;
     background-color: rgba(17, 20, 24, 0.97);
@@ -591,7 +593,7 @@ ul {
 
   /* Reduce hero top padding to match smaller header */
   .hero-content {
-    padding-top: 60px;
+    padding-top: 52px;
   }
 }
 
@@ -608,6 +610,29 @@ ul {
    RESPONSIVE — DESKTOP (≥900px)
    ============================================================ */
 @media (min-width: 900px) {
+  /* Larger base type on desktop — scales all rem values up proportionally */
+  html {
+    font-size: 17px;
+  }
+
+  /* Explicitly raise the smallest text so nothing reads below ~16px */
+  .about-expertise li {
+    font-size: 1rem;
+  }
+
+  .footer-contact a,
+  .footer-contact li {
+    font-size: 1rem;
+  }
+
+  .footer-copy {
+    font-size: 1rem;
+  }
+
+  .btn-sm {
+    font-size: 1rem;
+  }
+
   .services-grid {
     grid-template-columns: repeat(4, 1fr);
   }
