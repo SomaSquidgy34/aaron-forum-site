@@ -44,9 +44,9 @@ Text Domain: aaron-forum
   --shadow-card-hover: 0 8px 32px rgba(0, 0, 0, 0.38);
 
   --header-height: 96px;
-  --header-height-mobile: 52px;
+  --header-height-mobile: 64px;
   --logo-height: 88px;
-  --logo-height-mobile: 38px;
+  --logo-height-mobile: 44px;
   --logo-brightness: 0.72;
 }
 
@@ -224,6 +224,9 @@ body {
 
 .logo {
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  line-height: 0;
 }
 
 .logo-img {
@@ -536,6 +539,7 @@ body {
 .nav-toggle {
   display: none;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   gap: 5px;
   width: 40px;
@@ -545,6 +549,7 @@ body {
   border: none;
   cursor: pointer;
   border-radius: 6px;
+  flex-shrink: 0;
   transition: background-color var(--transition);
 }
 
@@ -564,13 +569,13 @@ body {
 
 /* Animate bars into an X when open */
 .nav-toggle[aria-expanded="true"] .hamburger-bar:nth-child(1) {
-  transform: translateY(7px) rotate(45deg);
+  transform: translateY(6px) rotate(45deg);
 }
 .nav-toggle[aria-expanded="true"] .hamburger-bar:nth-child(2) {
   opacity: 0;
 }
 .nav-toggle[aria-expanded="true"] .hamburger-bar:nth-child(3) {
-  transform: translateY(-7px) rotate(-45deg);
+  transform: translateY(-6px) rotate(-45deg);
 }
 
 /* ============================================================
@@ -580,8 +585,7 @@ body {
   /* Smaller header */
   .header-inner {
     height: var(--header-height-mobile);
-    align-items: flex-start;
-    padding-top: 7px;
+    align-items: center;
   }
 
   /* Smaller logo */
@@ -594,6 +598,10 @@ body {
   /* Show hamburger, hide nav by default */
   .nav-toggle {
     display: flex;
+    width: 36px;
+    height: 36px;
+    gap: 4px;
+    padding: 5px;
   }
 
   nav {
