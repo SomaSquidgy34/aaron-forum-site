@@ -3,7 +3,8 @@ name: Publish Website
 on:
   push:
     branches:
-      - '**'
+      - main
+      - 'copilot/**'
   workflow_dispatch:
 jobs:
   Publish-Website:
