@@ -3,6 +3,9 @@ name: Publish Website
 on:
   push:
     branches:
+      - '**'
+  pull_request:
+    branches:
       - main
   workflow_dispatch:
 jobs:
