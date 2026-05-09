@@ -43,10 +43,10 @@ Text Domain: aaron-forum
   --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.25);
   --shadow-card-hover: 0 8px 32px rgba(0, 0, 0, 0.38);
 
-  --header-height: 112px;
-  --header-height-mobile: 64px;
-  --logo-height: 104px;
-  --logo-height-mobile: 36px;
+  --header-height: 126px;
+  --header-height-mobile: 72px;
+  --logo-height: 118px;
+  --logo-height-mobile: 44px;
   --logo-brightness: 0.72;
 }
 
@@ -277,10 +277,12 @@ body {
 
 /* Keep Contact nav item visually consistent with Services/About. */
 .nav-list .btn-sm,
-.elementor-nav-menu .btn.btn-sm > a {
+.elementor-nav-menu .menu-item.btn.btn-sm,
+.elementor-nav-menu .menu-item.btn.btn-sm > a {
   background: transparent !important;
   color: var(--color-light) !important;
   border: 0 !important;
+  box-shadow: none !important;
   border-radius: 0;
   padding: 0;
   font-size: 1.1rem;
@@ -289,6 +291,8 @@ body {
 
 .nav-list .btn-sm:hover,
 .nav-list .btn-sm:focus-visible,
+.elementor-nav-menu .menu-item.btn.btn-sm:hover,
+.elementor-nav-menu .menu-item.btn.btn-sm:focus-visible,
 .elementor-nav-menu .btn.btn-sm > a:hover,
 .elementor-nav-menu .btn.btn-sm > a:focus-visible {
   background: transparent !important;
@@ -573,19 +577,20 @@ body {
   height: 40px;
   padding: 4px;
   background: transparent;
-  border: 1px solid rgba(245, 245, 245, 0.24);
+  border: 1px solid rgba(192, 57, 43, 0.55);
   cursor: pointer;
   border-radius: 8px;
   flex-shrink: 0;
-  color: var(--color-light);
+  color: rgba(245, 245, 245, 0.92);
+  background-color: rgba(192, 57, 43, 0.1);
   appearance: none;
   transition: background-color var(--transition), border-color var(--transition);
 }
 
 .nav-toggle:hover,
 .nav-toggle:focus-visible {
-  background-color: rgba(255, 255, 255, 0.08);
-  border-color: rgba(245, 245, 245, 0.5);
+  background-color: rgba(192, 57, 43, 0.2);
+  border-color: rgba(192, 57, 43, 0.9);
 }
 
 /* SVG icons inside the toggle button */
@@ -620,16 +625,21 @@ body {
 .elementor-location-header .elementor-menu-toggle {
   min-width: 40px;
   min-height: 40px;
-  border: 1px solid rgba(245, 245, 245, 0.24);
+  border: 1px solid rgba(192, 57, 43, 0.55);
   border-radius: 8px;
-  color: var(--color-light);
+  color: rgba(245, 245, 245, 0.92);
+  background-color: rgba(192, 57, 43, 0.1);
   transition: background-color var(--transition), border-color var(--transition);
 }
 
 .elementor-location-header .elementor-menu-toggle:hover,
 .elementor-location-header .elementor-menu-toggle:focus-visible {
-  background-color: rgba(255, 255, 255, 0.08);
-  border-color: rgba(245, 245, 245, 0.5);
+  background-color: rgba(192, 57, 43, 0.2);
+  border-color: rgba(192, 57, 43, 0.9);
+}
+
+.elementor-location-header .elementor-nav-menu--dropdown {
+  z-index: 120;
 }
 
 .elementor-location-header .elementor-menu-toggle svg {
