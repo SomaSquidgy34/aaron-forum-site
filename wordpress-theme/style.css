@@ -275,6 +275,25 @@ body {
   color: var(--color-white);
 }
 
+/* Keep header nav interactions visually stable (no hover movement). */
+.site-header .nav-list a,
+.elementor-location-header .elementor-item,
+.elementor-location-header .menu-item.btn.btn-sm,
+.elementor-location-header .menu-item.btn.btn-sm > a {
+  transform: none !important;
+}
+
+.site-header .btn:hover,
+.site-header .btn:focus-visible,
+.site-header .btn-primary:hover,
+.site-header .btn-primary:focus-visible,
+.site-header .btn-outline:hover,
+.site-header .btn-outline:focus-visible,
+.elementor-location-header .elementor-item:hover,
+.elementor-location-header .elementor-item:focus-visible {
+  transform: none !important;
+}
+
 /* Keep Contact nav item visually consistent with Services/About. */
 .nav-list .btn-sm,
 .elementor-nav-menu .menu-item.btn.btn-sm,
