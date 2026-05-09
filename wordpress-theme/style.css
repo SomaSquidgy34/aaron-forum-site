@@ -797,6 +797,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    margin-left: 24px;
   }
 
   .elementor-location-header .elementor-nav-menu--dropdown .menu-item {
