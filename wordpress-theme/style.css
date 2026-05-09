@@ -227,6 +227,7 @@ body {
   display: flex;
   align-items: center;
   line-height: 0;
+  max-width: 70vw;
 }
 
 .logo-img {
@@ -243,6 +244,13 @@ body {
   width: auto;
   display: block;
   filter: brightness(var(--logo-brightness));
+}
+
+.custom-logo-link {
+  display: flex;
+  align-items: center;
+  line-height: 0;
+  max-width: 70vw;
 }
 
 .nav-list {
@@ -540,27 +548,29 @@ body {
   display: none;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   padding: 4px;
   background: transparent;
-  border: none;
+  border: 1px solid rgba(245, 245, 245, 0.24);
   cursor: pointer;
-  border-radius: 6px;
+  border-radius: 8px;
   flex-shrink: 0;
   color: var(--color-light);
-  transition: background-color var(--transition);
+  appearance: none;
+  transition: background-color var(--transition), border-color var(--transition);
 }
 
 .nav-toggle:hover,
 .nav-toggle:focus-visible {
   background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(245, 245, 245, 0.5);
 }
 
 /* SVG icons inside the toggle button */
 .nav-toggle svg {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   display: block;
   flex-shrink: 0;
 }
@@ -581,9 +591,15 @@ body {
   .header-inner {
     height: var(--header-height-mobile);
     align-items: center;
+    gap: 0.75rem;
   }
 
   /* Smaller logo */
+  .logo,
+  .custom-logo-link {
+    max-width: 64vw;
+  }
+
   .logo-img,
   .custom-logo-link img,
   .custom-logo {

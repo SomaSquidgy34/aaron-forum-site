@@ -12,19 +12,18 @@
   <header class="site-header">
     <div class="container header-inner">
 
-      <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo">
-        <?php
-        if ( has_custom_logo() ) {
-          the_custom_logo();
-        } else {
-          printf(
-            '<img src="%s" alt="%s" class="logo-img" />',
-            esc_url( get_template_directory_uri() . '/assets/logo.jpg' ),
-            esc_attr( get_bloginfo( 'name' ) )
-          );
-        }
-        ?>
-      </a>
+      <?php
+      if ( has_custom_logo() ) {
+        the_custom_logo();
+      } else {
+        printf(
+          '<a href="%s" class="logo"><img src="%s" alt="%s" class="logo-img" /></a>',
+          esc_url( home_url( '/' ) ),
+          esc_url( get_template_directory_uri() . '/assets/logo.jpg' ),
+          esc_attr( get_bloginfo( 'name' ) )
+        );
+      }
+      ?>
 
       <button class="nav-toggle" aria-expanded="false" aria-label="Open navigation" aria-controls="primary-nav">
         <!-- Hamburger icon (shown when menu is closed) -->
