@@ -27,9 +27,17 @@
       </a>
 
       <button class="nav-toggle" aria-expanded="false" aria-label="Open navigation" aria-controls="primary-nav">
-        <span class="hamburger-bar"></span>
-        <span class="hamburger-bar"></span>
-        <span class="hamburger-bar"></span>
+        <!-- Hamburger icon (shown when menu is closed) -->
+        <svg class="icon-hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+          <line x1="3" y1="6"  x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+        <!-- Close (X) icon (shown when menu is open) -->
+        <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+          <line x1="4" y1="4"  x2="20" y2="20"/>
+          <line x1="20" y1="4" x2="4"  y2="20"/>
+        </svg>
       </button>
 
       <nav id="primary-nav" aria-label="<?php esc_attr_e( 'Primary navigation', 'aaron-forum' ); ?>">
