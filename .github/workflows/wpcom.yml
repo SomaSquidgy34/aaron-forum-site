@@ -21,7 +21,7 @@ jobs:
           curl -fsSL "https://aaronforum.com/wp-json/dfg/v1/package_update?secret=${{ secrets.WP_DEPLOY_SECRET }}&type=theme&package=aaron-forum-site"
 
       - name: Upload theme artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: wpcom
           path: ./wordpress-theme/
