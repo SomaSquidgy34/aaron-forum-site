@@ -43,10 +43,10 @@ Text Domain: aaron-forum
   --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.25);
   --shadow-card-hover: 0 8px 32px rgba(0, 0, 0, 0.38);
 
-  --header-height: 126px;
-  --header-height-mobile: 72px;
-  --logo-height: 118px;
-  --logo-height-mobile: 44px;
+  --header-height: 240px;
+  --header-height-mobile: 128px;
+  --logo-height: 236px;
+  --logo-height-mobile: 88px;
   --logo-brightness: 0.72;
 }
 
@@ -227,7 +227,7 @@ body {
   display: flex;
   align-items: center;
   line-height: 0;
-  max-width: 70vw;
+  max-width: 85vw;
 }
 
 .logo-img {
@@ -250,7 +250,7 @@ body {
   display: flex;
   align-items: center;
   line-height: 0;
-  max-width: 70vw;
+  max-width: 85vw;
 }
 
 .nav-list {
@@ -615,7 +615,7 @@ body {
    Mirror the same sizing/toggle treatment there on mobile.
    ============================================================ */
 .elementor-location-header .elementor-widget-theme-site-logo img {
-  height: var(--logo-height);
+  height: var(--logo-height) !important;
   width: auto;
   max-width: 100%;
   display: block;
@@ -661,7 +661,7 @@ body {
   /* Smaller logo */
   .logo,
   .custom-logo-link {
-    max-width: 64vw;
+    max-width: 78vw;
   }
 
   .logo-img,
