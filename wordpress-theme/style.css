@@ -573,30 +573,29 @@ body {
   display: none;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 56px;
+  height: 56px;
   padding: 4px;
   background: transparent;
-  border: 1px solid rgba(192, 57, 43, 0.55);
+  border: 0;
   cursor: pointer;
   border-radius: 8px;
   flex-shrink: 0;
   color: rgba(245, 245, 245, 0.92);
-  background-color: rgba(192, 57, 43, 0.1);
   appearance: none;
   transition: background-color var(--transition), border-color var(--transition);
 }
 
 .nav-toggle:hover,
 .nav-toggle:focus-visible {
-  background-color: rgba(192, 57, 43, 0.2);
-  border-color: rgba(192, 57, 43, 0.9);
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: transparent;
 }
 
 /* SVG icons inside the toggle button */
 .nav-toggle svg {
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   display: block;
   flex-shrink: 0;
 }
@@ -623,19 +622,19 @@ body {
 }
 
 .elementor-location-header .elementor-menu-toggle {
-  min-width: 40px;
-  min-height: 40px;
-  border: 1px solid rgba(192, 57, 43, 0.55);
+  min-width: 56px;
+  min-height: 56px;
+  border: 0;
   border-radius: 8px;
   color: rgba(245, 245, 245, 0.92);
-  background-color: rgba(192, 57, 43, 0.1);
+  background-color: transparent;
   transition: background-color var(--transition), border-color var(--transition);
 }
 
 .elementor-location-header .elementor-menu-toggle:hover,
 .elementor-location-header .elementor-menu-toggle:focus-visible {
-  background-color: rgba(192, 57, 43, 0.2);
-  border-color: rgba(192, 57, 43, 0.9);
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: transparent;
 }
 
 .elementor-location-header .elementor-nav-menu--dropdown {
@@ -643,8 +642,8 @@ body {
 }
 
 .elementor-location-header .elementor-menu-toggle svg {
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
 }
 
 /* ============================================================
@@ -735,14 +734,14 @@ body {
   }
 
   .elementor-location-header .elementor-menu-toggle {
-    min-width: 40px;
-    min-height: 40px;
+    min-width: 56px;
+    min-height: 56px;
     padding: 8px;
   }
 
   .elementor-location-header .elementor-menu-toggle svg {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
   }
 }
 
