@@ -771,6 +771,25 @@ body {
    RESPONSIVE — DESKTOP (≥900px)
    ============================================================ */
 @media (min-width: 900px) {
+  .elementor-location-header .elementor-nav-menu--main .elementor-nav-menu,
+  .elementor-location-header .elementor-nav-menu--dropdown .elementor-nav-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .elementor-location-header .elementor-nav-menu--dropdown .menu-item {
+    width: auto;
+  }
+
+  .elementor-location-header .elementor-nav-menu--main .elementor-item,
+  .elementor-location-header .elementor-nav-menu--dropdown .elementor-item {
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+
   /* Larger base type on desktop — scales all rem values up proportionally */
   html {
     font-size: 17px;
