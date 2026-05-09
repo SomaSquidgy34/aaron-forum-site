@@ -43,10 +43,10 @@ Text Domain: aaron-forum
   --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.25);
   --shadow-card-hover: 0 8px 32px rgba(0, 0, 0, 0.38);
 
-  --header-height: 96px;
-  --header-height-mobile: 52px;
-  --logo-height: 88px;
-  --logo-height-mobile: 28px;
+  --header-height: 112px;
+  --header-height-mobile: 64px;
+  --logo-height: 104px;
+  --logo-height-mobile: 36px;
   --logo-brightness: 0.72;
 }
 
@@ -273,6 +273,27 @@ body {
 
 .nav-list a:not(.btn):hover {
   color: var(--color-white);
+}
+
+/* Keep Contact nav item visually consistent with Services/About. */
+.nav-list .btn-sm,
+.elementor-nav-menu .btn.btn-sm > a {
+  background: transparent !important;
+  color: var(--color-light) !important;
+  border: 0 !important;
+  border-radius: 0;
+  padding: 0;
+  font-size: 1.1rem;
+  font-weight: var(--fw-medium);
+}
+
+.nav-list .btn-sm:hover,
+.nav-list .btn-sm:focus-visible,
+.elementor-nav-menu .btn.btn-sm > a:hover,
+.elementor-nav-menu .btn.btn-sm > a:focus-visible {
+  background: transparent !important;
+  color: var(--color-white) !important;
+  border: 0 !important;
 }
 
 /* ============================================================
@@ -672,13 +693,20 @@ body {
     width: 100%;
   }
 
-  .nav-list a:not(.btn) {
+  .nav-list a {
     display: block;
     padding: 0.75rem clamp(16px, 4vw, 40px);
   }
 
   .nav-list .btn-sm {
-    margin: 0.5rem clamp(16px, 4vw, 40px);
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .elementor-nav-menu .btn.btn-sm > a {
+    display: block;
+    padding: 0.75rem clamp(16px, 4vw, 40px) !important;
+    border-radius: 0;
   }
 
   /* Reduce hero top padding to match smaller header */
