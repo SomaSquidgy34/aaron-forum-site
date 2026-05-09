@@ -546,6 +546,8 @@ ul {
   .header-inner {
     height: 64px;
     align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
   }
 
   /* Smaller logo */
@@ -560,6 +562,7 @@ ul {
     height: 36px;
     gap: 4px;
     padding: 5px;
+    margin-left: auto;
   }
 
   nav {
@@ -599,9 +602,14 @@ ul {
     margin: 0.5rem clamp(16px, 4vw, 40px);
   }
 
-  /* Reduce hero top padding to match smaller header */
+  .hero {
+    min-height: 88svh;
+  }
+
+  /* Reduce hero top padding and pull content upward on mobile */
   .hero-content {
     padding-top: 64px;
+    padding-bottom: 2rem;
   }
 }
 

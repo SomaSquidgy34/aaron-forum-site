@@ -222,7 +222,8 @@ body {
   height: var(--header-height);
 }
 
-.logo {
+.logo,
+.custom-logo-link {
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -581,6 +582,8 @@ body {
   .header-inner {
     height: var(--header-height-mobile);
     align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
   }
 
   /* Smaller logo */
@@ -593,6 +596,7 @@ body {
   /* Show hamburger, hide nav by default */
   .nav-toggle {
     display: flex;
+    margin-left: auto;
   }
 
   nav {
@@ -632,9 +636,14 @@ body {
     margin: 0.5rem clamp(16px, 4vw, 40px);
   }
 
-  /* Reduce hero top padding to match smaller header */
+  .hero {
+    min-height: 88svh;
+  }
+
+  /* Reduce hero top padding and pull content upward on mobile */
   .hero-content {
     padding-top: var(--header-height-mobile);
+    padding-bottom: 2rem;
   }
 
   .contact-actions {
