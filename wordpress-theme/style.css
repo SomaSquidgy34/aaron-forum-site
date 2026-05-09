@@ -749,6 +749,19 @@ body {
    RESPONSIVE — TABLET (≥640px)
    ============================================================ */
 @media (min-width: 640px) {
+  .elementor-nav-menu--main .menu-item.btn.btn-sm {
+    display: list-item !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    line-height: inherit !important;
+  }
+
+  .elementor-nav-menu--main .menu-item.btn.btn-sm > a.elementor-item {
+    display: block;
+    padding: 13px 20px !important;
+    line-height: inherit;
+  }
+
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
   }
