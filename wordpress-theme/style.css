@@ -596,7 +596,6 @@ body {
   /* Show hamburger, hide nav by default */
   .nav-toggle {
     display: flex;
-    margin-left: auto;
   }
 
   nav {
