@@ -666,6 +666,59 @@ body {
 }
 
 /* ============================================================
+   ALWAYS-VISIBLE HEADER NAV (DESKTOP + MOBILE)
+   Keep links visible under logo; disable icon toggles/dropdowns.
+   ============================================================ */
+.nav-toggle,
+.elementor-location-header .elementor-menu-toggle {
+  display: none !important;
+}
+
+.elementor-location-header .elementor-nav-menu--dropdown {
+  display: none !important;
+}
+
+.elementor-location-header .elementor-nav-menu--main {
+  display: block !important;
+}
+
+.elementor-location-header .elementor-element[data-id="1fd184b"] > .e-con-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.elementor-location-header .elementor-element[data-id="9b33be9"],
+.elementor-location-header .elementor-element[data-id="a2bb444"] {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.elementor-location-header .elementor-nav-menu--main .elementor-nav-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0.25rem 0;
+}
+
+.elementor-location-header .elementor-nav-menu--main .menu-item {
+  width: auto;
+}
+
+.elementor-location-header .elementor-nav-menu--main .elementor-item {
+  display: inline-block;
+  padding: 0.25rem 0;
+  text-align: center;
+}
+
+/* ============================================================
    RESPONSIVE — MOBILE (< 640px)
    ============================================================ */
 @media (max-width: 639px) {
