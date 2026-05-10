@@ -688,42 +688,41 @@ body {
     height: var(--logo-height-mobile);
   }
 
-  /* Show hamburger, hide nav by default */
+  /* Hide mobile bullseye/hamburger and keep menu visible like desktop. */
   .nav-toggle {
-    display: flex;
+    display: none !important;
   }
 
   nav {
-    position: fixed;
-    top: var(--header-height-mobile);
-    left: 0;
-    right: 0;
-    background-color: rgba(17, 20, 24, 0.97);
-    backdrop-filter: blur(8px);
-    border-bottom: 1px solid var(--color-border);
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.3s ease;
-  }
-
-  nav.is-open {
-    max-height: 300px;
+    position: static;
+    top: auto;
+    left: auto;
+    right: auto;
+    background-color: transparent;
+    backdrop-filter: none;
+    border-bottom: 0;
+    overflow: visible;
+    max-height: none;
+    transition: none;
   }
 
   .nav-list {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0;
-    padding: 0.5rem 0 1rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding: 0.5rem 0;
   }
 
   .nav-list li {
-    width: 100%;
+    width: auto;
   }
 
   .nav-list a {
-    display: block;
-    padding: 0.75rem clamp(16px, 4vw, 40px);
+    display: inline-block;
+    padding: 0.25rem 0;
+    text-align: center;
   }
 
   .nav-list .btn-sm {
@@ -732,9 +731,33 @@ body {
   }
 
   .elementor-nav-menu .btn.btn-sm > a {
-    display: block;
-    padding: 0.75rem clamp(16px, 4vw, 40px) !important;
+    display: inline-block;
+    padding: 0.25rem 0 !important;
     border-radius: 0;
+  }
+
+  .elementor-location-header .elementor-menu-toggle {
+    display: none !important;
+  }
+
+  .elementor-location-header .elementor-nav-menu--main .elementor-nav-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding: 0.5rem 0;
+  }
+
+  .elementor-location-header .elementor-nav-menu--main .elementor-item {
+    display: inline-block;
+    padding: 0.25rem 0;
+    text-align: center;
+  }
+
+  .elementor-location-header .elementor-nav-menu--dropdown {
+    display: none !important;
   }
 
   /* Reduce hero top padding to match smaller header */
@@ -750,12 +773,6 @@ body {
   .elementor-location-header .elementor-widget-theme-site-logo img {
     height: var(--logo-height-mobile) !important;
     max-width: 64vw;
-  }
-
-  .elementor-location-header .elementor-menu-toggle {
-    min-width: 56px;
-    min-height: 56px;
-    padding: 8px;
   }
 
   .elementor-location-header .elementor-menu-toggle svg {
