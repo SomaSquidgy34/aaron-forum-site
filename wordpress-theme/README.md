@@ -56,7 +56,7 @@ WordPress will now use `front-page.php` to render the home page with all section
 Install **Yoast SEO** or **Rank Math**, then on the Home page:
 
 - **SEO title:** `Aaron Forum | Firearms Consulting & Safety Expertise`
-- **Meta description:** `Aaron Forum – Firearms Consulting & Safety Expertise. 20+ years of experience: Special Forces, firearms instruction, multi gun range/store founder and operator, Special Operations armorer, certified gunsmith.`
+- **Meta description:** `Aaron Forum – Firearms Consulting & Safety Expertise. 20+ years of experience: U.S. Army Special Forces veteran, firearms instructor, gun range and gun store safety expert, founder and operator of multiple gun ranges and firearm retail stores, Special Operations armorer, certified gunsmith.`
 
 ---
 
