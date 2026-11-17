@@ -17,7 +17,7 @@ get_header();
       <div class="hero-overlay"></div>
       <div class="container hero-content">
         <h1>Firearms Consulting &amp; Safety Expertise</h1>
-        <p class="hero-sub">20+ years of experience: U.S. Army Special Forces veteran, firearms instructor, firearms training, gun range and gun store safety expert, founder and operator of multiple commercial gun ranges and a physical and e-commerce firearms retail business, Special Operations armorer, and certified gunsmith through the Colorado School of Trades, the oldest gunsmithing institution in the country.</p>
+        <p class="hero-sub">20+ years of experience: U.S. Army Special Forces veteran, firearms instructor, gun range and gun store safety expert, founder and operator of multiple gun ranges and firearm retail stores, Special Operations armorer, certified gunsmith.</p>
         <a href="#contact" class="btn btn-primary">Contact</a>
       </div>
     </section>
